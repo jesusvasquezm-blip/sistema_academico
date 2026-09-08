@@ -1,2 +1,1 @@
-# sistema_academico
-Funcionalidad: Gestión de Usuarios
+Funcionalidad: Modificacion en rama secundaria

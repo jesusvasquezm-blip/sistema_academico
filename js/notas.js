@@ -1,0 +1,4 @@
+const datos={ "Desarrollo de Aplicaciones Web": [16,18,15,17], "Programación de Móviles":[18,17,19,16], "Bases de Datos":[14,16,15,18] };
+const select=document.getElementById("curso"), resultado=document.getElementById("resultado");
+function mostrar(){const n=datos[select.value];const promedio=(n.reduce((a,b)=>a+b,0)/n.length).toFixed(1);resultado.innerHTML=`<div><small>Promedio</small><strong>${promedio}</strong></div><p>Notas registradas: ${n.join(" · ")}</p><span class="${promedio>=13?"aprobado":"observado"}">${promedio>=13?"APROBADO":"OBSERVADO"}</span>`;}
+select.addEventListener("change",mostrar);mostrar();

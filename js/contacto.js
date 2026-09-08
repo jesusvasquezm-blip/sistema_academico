@@ -1,0 +1,1 @@
+document.getElementById("formulario").addEventListener("submit",e=>{e.preventDefault();document.getElementById("respuesta").textContent="Mensaje enviado correctamente. Gracias por contactarnos.";e.target.reset();});
